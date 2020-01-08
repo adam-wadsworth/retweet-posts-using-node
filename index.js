@@ -9,7 +9,10 @@ const config = new twitter({
   access_token_secret: process.env.ACCESS_TOKEN_SECRET
 });
 
-config.get('search/tweets', {q: 'awwwards'}, (error, tweets, response) => {
+// Search Query: 500 characters maximum
+// Count: 15 - 100
+
+config.get('search/tweets', {q: 'nodejs', count: 100}, (error, tweets, response) => {
 
   if (!error) {
 
