@@ -2,6 +2,8 @@ require('dotenv').config();
 
 const twitter = require('twitter');
 
+// https://developer.twitter.com
+
 const config = new twitter({
   consumer_key: process.env.CONSUMER_KEY,
   consumer_secret: process.env.CONSUMER_SECRET,
